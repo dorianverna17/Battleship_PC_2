@@ -1,0 +1,62 @@
+Verna Dorian - Alexandru, 314CC
+
+Am lucrat aproximativ 20 de ore la proiect si am rezolvat cerintele 1
+si 2 si putin din 3, adaugand si unele elemente bonus.
+
+I. Cerinta 1
+
+Am facut un meniu principal care sa contina un scris mare cu numele
+jocului (ASCII art) si care sa faca blink. Mai jos am cele trei butoane:
+New Game, Resume Game si Quit. Apasand pe Quit, se opreste executia 
+programului. Apasand pe New Game, programul ne duce intr-o fereasta in
+care trebuie sa alegem un fisier dat ca argument, fisier care sa incarce
+configuratia de nave a acestuia. Din ecranul cu fisiere se poate ajunge
+inapoi in Main Menu apasand tasta Q. Alegerea unei configuratii, urmata
+de tasta Enter ne duce in fereastra de joc, fereastra care contine cele
+doua grid-uri. Daca apasam de doua ori Q aici, atunci ne introarcem la 
+Main Menu. Optiunea de a da Quit este sugerata si prin prezenta unor
+mesaje ajutatoare. Daca nu a fost aleasa nicio configuratie de nave, atunci
+optiunea Resume Game nu va fi accesibila si va fi afisat un mesaj: 
+"There is no game to be resumed". Daca a fost aleasa o configuratie de nave,
+si deci s-a intrat in fereastra de joc, atunci odata ce ne intoarcem la
+Main Menu vom observa ca optiunea Resume Game este accesibila.
+
+II. Cerinta 2
+
+La cerinta 2 am afisat in fereastra de joc cele doua griduri: 
+cel al playerului (afisat in functie de configuratia aleasa)
+si cel al calculatorului (generat random pe baza unei functii implementate
+in functie de timp). Functia este asemanatoare cu doua exercitii din laboratoare,
+unul din Lab-ul 2 si unul din Lab-ul 12.
+Gridul calculatorului a fost memorat si afisat in fisierul computer_grid.txt,
+pe ecranul de joc fiind afisat doar un grid gol, urmand ca pozitiile sa fie gasite de
+player.
+
+III. Cerinta 3
+
+Aici am facut jucatorul sa poata sa se miste pe grid-ul adversarului din sageti 
+si sa marcheze casutele. Daca casuta marcata la enter este o parte de nava,
+atunci casuta de pe grid este marcata printr-un x, iar in caz contrat, atunci este
+marcata printr-un ~.
+
+Bonusuri
+
+Am creat meniul pentru a alege fisierul de configuratie.
+Am incercat sa creezez doua ferestre diferite pentrun a diferentia
+gridul calculatorului de cel al playerului
+Am introdus numele Battleship cu ASCII art si i-am dat un atribut pentru a 
+face blink.
+Am creat un fisier pentru a arata gridul computerului.
+
+Alte precizari:
+
+Am incercat sa fac proiectul in vederea faptului ca o sa il termin
+si ca o sa iasa un joc bun, motiv pentru care am tinut sa fac un
+meniu functional din mai multe puncte de vedere, singurul fapt negativ
+a fost ca l-am inceput destul de tarziu, motiv pentru care nu am avut timp sa
+termin jocul.
+
+!!Am atasat mai multe harti si se pot da ca argumente cu comanda
+./battleship map1.txt map2.txt ..
+
+Am alocat dinamic configuratiile din fisiere
